@@ -1,0 +1,87 @@
+{
+  "categories": [
+    {
+      "name": {
+        "en": "Appetizers",
+        "am": "አፕታይዘር",
+        "om": "Appetizers"
+      },
+      "items": [
+        {
+          "name": {
+            "en": "Bruschetta",
+            "am": "ብሩስኬታ",
+            "om": "Bruschetta"
+          },
+          "description": {
+            "en": "Toasted bread with tomatoes, garlic, and basil",
+            "am": "በቲማቲም፣ ነጭ ሽንኩርት እና ባሲል የተጠበሰ ዳቦ",
+            "om": "Daabboo akkaatee timaattii, qullubbii adii fi basilii wajjin"
+          },
+          "price": 8.99,
+          "image": "/images/uploads/bruschetta.jpg"
+        },
+        {
+          "name": {
+            "en": "Stuffed Mushrooms",
+            "am": "የተሞሉ እንጉዳዮች",
+            "om": "Uukkoo wandaboo"
+          },
+          "description": {
+            "en": "Mushrooms filled with cream cheese and herbs",
+            "am": "በክሬም አይብ እና ቅጠላ ቅጠሎች የተሞሉ እንጉዳዮች",
+            "om": "Uukkoo wandaboo chaazii fi biqiltuuwwan urgaa qaban"
+          },
+          "price": 9.99,
+          "image": "/images/uploads/stuffed-mushrooms.jpg"
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "Main Courses",
+        "am": "ዋና ምግቦች",
+        "om": "Nyaata Gurguddoo"
+      },
+      "items": [
+        {
+          "name": {
+            "en": "Grilled Salmon",
+            "am": "የተጠበሰ ሳልሞን",
+            "om": "Saalimoonii eelee irratti bilcheffame"
+          },
+          "description": {
+            "en": "Salmon fillet with lemon butter sauce",
+            "am": "የሳልሞን ፍሌት ከሎሚ ቅቤ መረቅ ጋር",
+            "om": "Filii saalimoonii sosoo dhadhaa loomiidhaan"
+          },
+          "price": 18.99,
+          "image": "/images/uploads/salmon.jpg"
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "Juices",
+        "am": "ጭማቂዎች",
+        "om": "Cuunfaa"
+      },
+      "items": [
+        {
+          "name": {
+            "en": "Fresh Orange Juice",
+            "am": "ትኩስ ብርቱካን ጭማቂ",
+            "om": "Cuunfaa birtukaana haaraa"
+          },
+          "description": {
+            "en": "Squeezed from fresh oranges",
+            "am": "ከትኩስ ብርቱካን የተጨመቀ",
+            "om": "Birtukaana haaraa irraa kuufame"
+          },
+          "price": 5.99,
+          "image": "/images/uploads/orange-juice.jpg"
+        }
+      ]
+    }
+  ]
+}
