@@ -1,8 +1,7 @@
 backend:
   name: git-gateway
-  branch: main # Change to master if your default branch is master
+  branch: main
 
-# This folder will be used for uploaded images
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
 
@@ -42,35 +41,8 @@ collections:
                     name: "description"
                     widget: "object"
                     fields:
-                      - {
-                          label: "English",
-                          name: "en",
-                          widget: "text",
-                          required: false,
-                        }
-                      - {
-                          label: "Amharic",
-                          name: "am",
-                          widget: "text",
-                          required: false,
-                        }
-                      - {
-                          label: "Afaan Oromo",
-                          name: "om",
-                          widget: "text",
-                          required: false,
-                        }
-                  - {
-                      label: "Price",
-                      name: "price",
-                      widget: "number",
-                      value_type: "float",
-                      step: 0.01,
-                    }
-                  - {
-                      label: "Image",
-                      name: "image",
-                      widget: "image",
-                      required: false,
-                    }
-                  # Category reference: we can derive from parent category, so not needed as field
+                      - { label: "English", name: "en", widget: "text", required: false }
+                      - { label: "Amharic", name: "am", widget: "text", required: false }
+                      - { label: "Afaan Oromo", name: "om", widget: "text", required: false }
+                  - { label: "Price", name: "price", widget: "number", value_type: "float", step: 0.01 }
+                  - { label: "Image", name: "image", widget: "image", required: false }
