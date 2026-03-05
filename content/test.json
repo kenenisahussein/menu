@@ -1,0 +1,15 @@
+{
+  "categories": [
+    {
+      "name": {"en": "Test", "am": "ሙከራ", "om": "Test"},
+      "items": [
+        {
+          "name": {"en": "Item", "am": "ንጥል", "om": "Item"},
+          "description": {"en": "Desc", "am": "መግለጫ", "om": "Desc"},
+          "price": 5,
+          "image": ""
+        }
+      ]
+    }
+  ]
+}
