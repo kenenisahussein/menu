@@ -1,3 +1,52 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "menu"
+    label: "Menu"
+    folder: "content"
+    create: false
+    files:
+      - name: "menu"
+        label: "Menu Items"
+        file: "content/menu.json"
+        fields:
+          - label: "Categories"
+            name: "categories"
+            widget: "list"
+            fields:
+              - label: "Category Name"
+                name: "name"
+                widget: "object"
+                fields:
+                  - { label: "English", name: "en", widget: "string" }
+                  - { label: "Amharic", name: "am", widget: "string" }
+                  - { label: "Afaan Oromo", name: "om", widget: "string" }
+              - label: "Items"
+                name: "items"
+                widget: "list"
+                fields:
+                  - label: "Item Name"
+                    name: "name"
+                    widget: "object"
+                    fields:
+                      - { label: "English", name: "en", widget: "string" }
+                      - { label: "Amharic", name: "am", widget: "string" }
+                      - { label: "Afaan Oromo", name: "om", widget: "string" }
+                  - label: "Description"
+                    name: "description"
+                    widget: "object"
+                    fields:
+                      - { label: "English", name: "en", widget: "text", required: false }
+                      - { label: "Amharic", name: "am", widget: "text", required: false }
+                      - { label: "Afaan Oromo", name: "om", widget: "text", required: false }
+                  - { label: "Price", name: "price", widget: "number", value_type: "float", step: 0.01 }
+                  - { label: "Image", name: "image", widget: "image", required: false }
+
 collections:
   - name: "menu"
     label: "Menu"
