@@ -47,12 +47,39 @@ collections:
                   - { label: "Price", name: "price", widget: "number", value_type: "float", step: 0.01 }
                   - { label: "Image", name: "image", widget: "image", required: false }
 
-collections:
-  - name: "menu"
-    label: "Menu"
-    folder: "content"
-    files:
-      - name: "test"          # changed from "menu"
+      # 👇 Second file entry (same indentation as the first "files:" item)
+      - name: "test"
         label: "Test Menu"
         file: "content/test.json"
-        fields:   # keep the same fields as before
+        fields:
+          - label: "Categories"
+            name: "categories"
+            widget: "list"
+            fields:
+              - label: "Category Name"
+                name: "name"
+                widget: "object"
+                fields:
+                  - { label: "English", name: "en", widget: "string" }
+                  - { label: "Amharic", name: "am", widget: "string" }
+                  - { label: "Afaan Oromo", name: "om", widget: "string" }
+              - label: "Items"
+                name: "items"
+                widget: "list"
+                fields:
+                  - label: "Item Name"
+                    name: "name"
+                    widget: "object"
+                    fields:
+                      - { label: "English", name: "en", widget: "string" }
+                      - { label: "Amharic", name: "am", widget: "string" }
+                      - { label: "Afaan Oromo", name: "om", widget: "string" }
+                  - label: "Description"
+                    name: "description"
+                    widget: "object"
+                    fields:
+                      - { label: "English", name: "en", widget: "text", required: false }
+                      - { label: "Amharic", name: "am", widget: "text", required: false }
+                      - { label: "Afaan Oromo", name: "om", widget: "text", required: false }
+                  - { label: "Price", name: "price", widget: "number", value_type: "float", step: 0.01 }
+                  - { label: "Image", name: "image", widget: "image", required: false }
